@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PasswordGenerator/static/css/main.d0651365.css",
-    "main.js": "/PasswordGenerator/static/js/main.a9298967.js",
+    "main.css": "/PasswordGenerator/static/css/main.9fe156eb.css",
+    "main.js": "/PasswordGenerator/static/js/main.63b90b40.js",
     "index.html": "/PasswordGenerator/index.html",
-    "main.d0651365.css.map": "/PasswordGenerator/static/css/main.d0651365.css.map",
-    "main.a9298967.js.map": "/PasswordGenerator/static/js/main.a9298967.js.map"
+    "main.9fe156eb.css.map": "/PasswordGenerator/static/css/main.9fe156eb.css.map",
+    "main.63b90b40.js.map": "/PasswordGenerator/static/js/main.63b90b40.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0651365.css",
-    "static/js/main.a9298967.js"
+    "static/css/main.9fe156eb.css",
+    "static/js/main.63b90b40.js"
   ]
 }
