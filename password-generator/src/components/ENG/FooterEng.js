@@ -1,4 +1,4 @@
-const Footer = () => {
+const FooterEng = () => {
   return (
     <footer class="absolute bottom-0 w-full p-4 bg-gray-500 shadow md:px-6 md:py-4 dark:bg-gray-500">
       <div class="sm:flex sm:items-center sm:justify-between">
@@ -13,7 +13,7 @@ const Footer = () => {
               href="https://github.com/WarcholF"
               class="mr-4 hover:underline md:mr-6 "
             >
-              My profile
+              My GitHub profile
             </a>
           </li>
         </ul>
@@ -22,4 +22,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterEng;

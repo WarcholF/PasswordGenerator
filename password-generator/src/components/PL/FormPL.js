@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Form = () => {
+const FormPL = () => {
   let passwordSymbols = [];
   let length = [8, 16, 20, 24, 28, 32, 64, 128, 256, 512, 1024, 2048];
   let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -124,7 +124,7 @@ const Form = () => {
       passwordSymbols = passwordSymbols.concat(symbols);
     }
     if (!includeNumber & !checkedLower & !checkedUpper & !checkedSymbols) {
-      alert("You need to choose at least one parameter!");
+      alert("Musisz wybrać co najmniej jeden parametr!");
       return false;
     }
 
@@ -139,13 +139,13 @@ const Form = () => {
 
   return (
     <div>
-      <div class="flex justify-center">
+      <div class="flex justify-center ">
         <div class="flex">
           <label
             for="checked-checkbox"
             class="mt-5  text-sm font-medium text-gray-700 dark:text-gray-700"
           >
-            Length
+            Długość
           </label>
           <select
             id="numbers"
@@ -162,7 +162,7 @@ const Form = () => {
             for="checked-checkbox"
             class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
           >
-            Include Numbers
+            Zawiera cyfry
           </label>
           <input
             id="number-select"
@@ -177,7 +177,7 @@ const Form = () => {
             for="checked-checkbox"
             class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
           >
-            Include Lowercase
+            Zawiera małe litery
           </label>
           <input
             id="default-checkbox"
@@ -192,7 +192,7 @@ const Form = () => {
             for="checked-checkbox"
             class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
           >
-            Include Uppercase
+            Zawiera duże litery
           </label>
           <input
             id="default-checkbox"
@@ -207,7 +207,7 @@ const Form = () => {
             for="checked-checkbox"
             class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
           >
-            Include Symbols
+            Zawiera symbole
           </label>
           <input
             id="default-checkbox"
@@ -224,7 +224,7 @@ const Form = () => {
           class="py-2.5 px-5 mx-2 mb-2 text-sm font-medium text-white focus:outline-none bg-gray-500 rounded-lg focus:z-10  dark:bg-gray-500 dark:text-white  dark:hover:text-white"
           onClick={generatePassword}
         >
-          Generate Password
+          Wygeneruj hasło
         </button>
         <input
           type="text"
@@ -239,11 +239,11 @@ const Form = () => {
             navigator.clipboard.writeText(passwordChange);
           }}
         >
-          Copy
+          Kopiuj
         </button>
       </div>
     </div>
   );
 };
 
-export default Form;
+export default FormPL;
