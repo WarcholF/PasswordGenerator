@@ -4,7 +4,7 @@ const FooterPL = () => {
       <div class="sm:flex sm:items-center sm:justify-between">
         <div class="flex items-center mb-4 sm:mb-0">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Generator haseł
+            Generator Haseł
           </span>
         </div>
         <ul class="flex flex-wrap items-center mb-4 text-sm text-white sm:mb-0 dark:text-white">

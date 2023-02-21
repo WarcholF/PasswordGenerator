@@ -1,4 +1,6 @@
 import { useState } from "react";
+import CardEng from "../components/ENG/CardEng";
+import CardPL from "../components/PL/CardPL";
 import FooterEng from "../components/ENG/FooterEng";
 import FormEng from "../components/ENG/FormEng";
 import HeadingEng from "../components/ENG/HeadingEng";
@@ -36,12 +38,14 @@ const MainContent = () => {
         <div>
           <HeadingEng />
           <FormEng />
+          <CardEng />
           <FooterEng />
         </div>
       ) : (
         <div>
           <HeadingPL />
           <FormPL />
+          <CardPL />
           <FooterPL />
         </div>
       )}
