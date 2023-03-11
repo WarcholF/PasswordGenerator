@@ -1,6 +1,6 @@
 const CardEng = () => {
   return (
-    <div className="flex space-x-10 justify-center mt-20">
+    <div className="flex space-x-10 justify-center mt-20 mb-10 pb-10 bg-gray-300">
       <div className="block max-w-sm p-6 rounded-lg shadow bg-gray-500">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-white text-center">
           Did u know?

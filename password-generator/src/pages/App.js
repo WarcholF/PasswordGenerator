@@ -36,9 +36,11 @@ const MainContent = () => {
       </label>
       {languageChange ? (
         <div>
-          <HeadingEng />
-          <FormEng />
-          <CardEng />
+          <div>
+            <HeadingEng />
+            <FormEng />
+            <CardEng />
+          </div>
           <FooterEng />
         </div>
       ) : (
