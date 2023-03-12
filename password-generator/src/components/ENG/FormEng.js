@@ -220,7 +220,7 @@ const FormEng = () => {
           </div>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center max-sm:grid">
         <button
           type="button"
           class="py-2.5 px-5 mx-2 mb-2 text-sm font-medium text-white focus:outline-none bg-gray-500 rounded-lg focus:z-10  dark:bg-gray-500 dark:text-white  dark:hover:text-white"

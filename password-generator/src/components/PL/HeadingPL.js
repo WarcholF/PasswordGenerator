@@ -8,7 +8,7 @@ const HeadingPL = () => {
         Wygeneruj swoje wyjątkowe, silne hasło żeby zadbać o bezpieczeństwo
         twojego konta, komputera, maila, programu czy czegokolwiek
       </p>
-      <hr class="w-96 h-1 mx-auto my-6 bg-gray-600 border-0 rounded md:my-10 dark:bg-gray-600"></hr>
+      <hr class="w-96 max-md:w-56 h-1 mx-auto my-6 bg-gray-600 border-0 rounded md:my-10 dark:bg-gray-600"></hr>
     </div>
   );
 };

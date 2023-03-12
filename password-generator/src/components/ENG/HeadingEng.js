@@ -8,7 +8,7 @@ const HeadingEng = () => {
         Generate your unique, strong password to take care of the security of
         your account, computer, email, program or anything else
       </p>
-      <hr class="w-96 h-1 mx-auto my-6 bg-gray-600 border-0 rounded md:my-10 dark:bg-gray-600"></hr>
+      <hr class="w-96 max-md:w-56 h-1 mx-auto my-6 bg-gray-600 border-0 rounded md:my-10 dark:bg-gray-600"></hr>
     </div>
   );
 };
