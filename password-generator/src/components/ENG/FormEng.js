@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const FormEng = () => {
   let passwordSymbols = [];
-  let length = [8, 16, 20, 24, 28, 32, 64, 128, 256, 512, 1024, 2048];
+  let length = [8, 16, 20, 24, 28, 32, 64, 128, 256, 512];
   let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   let symbols = [
     "`",
@@ -139,8 +139,8 @@ const FormEng = () => {
 
   return (
     <div>
-      <div class="flex justify-center">
-        <div class="flex">
+      <div class="flex justify-center max-md:grid">
+        <div class="flex max-md:justify-center">
           <label
             for="checked-checkbox"
             class="mt-5  text-sm font-medium text-gray-700 dark:text-gray-700"
@@ -149,7 +149,7 @@ const FormEng = () => {
           </label>
           <select
             id="numbers"
-            class=" mx-2 my-2 w-18 bg-gray-500 text-gray-900 text-sm rounded-lg  block  p-2.5 dark:bg-gray-500 dark:border-gray-600  dark:text-white "
+            class=" mx-2 my-2 w-16 bg-gray-500 text-gray-900 text-sm rounded-lg  block  p-2.5 dark:bg-gray-500 dark:border-gray-600  dark:text-white "
             onChange={handleNumberChange}
           >
             {length.map((length) => (
@@ -157,65 +157,67 @@ const FormEng = () => {
             ))}
           </select>
         </div>
-        <div class="flex mx-2 my-5">
-          <label
-            for="checked-checkbox"
-            class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
-          >
-            Include Numbers
-          </label>
-          <input
-            id="number-select"
-            type="checkbox"
-            onClick={handleNumber}
-            value=""
-            class="w-4 h-5  bg-gray-100 border-gray-300 rounded dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
-          ></input>
-        </div>
-        <div class="flex mx-2 my-5">
-          <label
-            for="checked-checkbox"
-            class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
-          >
-            Include Lowercase
-          </label>
-          <input
-            id="default-checkbox"
-            type="checkbox"
-            onClick={handleLower}
-            value=""
-            class="w-4 h-5  bg-gray-100 border-gray-300 rounded dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
-          ></input>
-        </div>
-        <div class="flex mx-2 my-5">
-          <label
-            for="checked-checkbox"
-            class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
-          >
-            Include Uppercase
-          </label>
-          <input
-            id="default-checkbox"
-            type="checkbox"
-            onClick={handleUpper}
-            value=""
-            class="w-4 h-5  bg-gray-100 border-gray-300 rounded  dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
-          ></input>
-        </div>
-        <div class="flex mx-2 my-5">
-          <label
-            for="checked-checkbox"
-            class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
-          >
-            Include Symbols
-          </label>
-          <input
-            id="default-checkbox"
-            type="checkbox"
-            onClick={handleSymbols}
-            value=""
-            class="w-4 h-5  bg-gray-100 border-gray-300 rounded  dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
-          ></input>
+        <div class="flex justify-center max-md:grid max-md:grid-cols-2">
+          <div class="flex mx-2 my-5">
+            <label
+              for="checked-checkbox"
+              class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
+            >
+              Numbers
+            </label>
+            <input
+              id="number-select"
+              type="checkbox"
+              onClick={handleNumber}
+              value=""
+              class="w-4 h-5  bg-gray-100 border-gray-300 rounded dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+          </div>
+          <div class="flex mx-2 my-5">
+            <label
+              for="checked-checkbox"
+              class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
+            >
+              Lowercase
+            </label>
+            <input
+              id="default-checkbox"
+              type="checkbox"
+              onClick={handleLower}
+              value=""
+              class="w-4 h-5  bg-gray-100 border-gray-300 rounded dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+          </div>
+          <div class="flex mx-2 my-5">
+            <label
+              for="checked-checkbox"
+              class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
+            >
+              Uppercase
+            </label>
+            <input
+              id="default-checkbox"
+              type="checkbox"
+              onClick={handleUpper}
+              value=""
+              class="w-4 h-5  bg-gray-100 border-gray-300 rounded  dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+          </div>
+          <div class="flex mx-2 my-5">
+            <label
+              for="checked-checkbox"
+              class="mx-2 text-sm font-medium text-gray-900 dark:text-gray-700"
+            >
+              Symbols
+            </label>
+            <input
+              id="default-checkbox"
+              type="checkbox"
+              onClick={handleSymbols}
+              value=""
+              class="w-4 h-5  bg-gray-100 border-gray-300 rounded  dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
+            ></input>
+          </div>
         </div>
       </div>
       <div class="flex justify-center">
@@ -229,7 +231,7 @@ const FormEng = () => {
         <input
           type="text"
           id="first_name"
-          class="w-96 py-2.5 px-5 mx-2 mb-2 font-medium bg-gray-500 text-sm rounded-lg  p-2.5 dark:bg-gray-500  dark:text-white "
+          class="w-96 max-md:w-48 py-2.5 px-5 mx-2 mb-2 font-medium bg-gray-500 text-sm rounded-lg  p-2.5 dark:bg-gray-500  dark:text-white "
           value={passwordChange}
         ></input>
         <button
