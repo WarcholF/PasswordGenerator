@@ -140,10 +140,10 @@ const FormEng = () => {
   return (
     <div>
       <div class="flex justify-center max-md:grid">
-        <div class="flex max-md:justify-center">
+        <div class="flex flex-row max-md:justify-center">
           <label
             for="checked-checkbox"
-            class="mt-5  text-sm font-medium text-gray-700 dark:text-gray-700"
+            class="mt-5 text-sm font-medium text-gray-700 dark:text-gray-700"
           >
             Length
           </label>
