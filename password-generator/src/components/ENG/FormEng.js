@@ -149,7 +149,7 @@ const FormEng = () => {
           </label>
           <select
             id="numbers"
-            class=" mx-2 my-2 w-16 bg-gray-500 text-gray-900 text-sm rounded-lg  block  p-2.5 dark:bg-gray-500 dark:border-gray-600  dark:text-white "
+            class=" mx-2 my-2 w-16 h-10 bg-gray-500 text-gray-900 text-sm rounded-lg  block  p-2.5 dark:bg-gray-500 dark:border-gray-600  dark:text-white "
             onChange={handleNumberChange}
           >
             {length.map((length) => (
