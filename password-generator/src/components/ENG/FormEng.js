@@ -143,13 +143,13 @@ const FormEng = () => {
         <div class="flex flex-row max-md:justify-center">
           <label
             for="checked-checkbox"
-            class="mt-5 text-sm font-medium text-gray-700 dark:text-gray-700"
+            class="mt-5 text-sm font-medium text-gray-700"
           >
             Length
           </label>
           <select
             id="numbers"
-            class=" mx-2 my-2 w-16 h-10 bg-gray-500 text-gray-900 text-sm rounded-lg  block  p-2.5 dark:bg-gray-500 dark:border-gray-600  dark:text-white "
+            class=" mx-2 my-2 w-16 h-10 bg-gray-500 text-sm rounded-lg  block  p-2.5  border-gray-600 text-white "
             onChange={handleNumberChange}
           >
             {length.map((length) => (

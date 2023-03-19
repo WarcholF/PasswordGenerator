@@ -3,7 +3,7 @@ const FooterPL = () => {
     <footer class="fixed h-16 bottom-0 w-full p-4 bg-gray-500 shadow md:px-6 md:py-4">
       <div class="sm:flex sm:items-center sm:justify-between">
         <div class="flex items-center mb-4 sm:mb-0">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Generator Haseł
           </span>
         </div>
