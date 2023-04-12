@@ -2,6 +2,7 @@
 Application to generate random password with chosen length & options (number, lowercase, uppercase, symbols). Available in both polish & english lenguage.
 Technologies used: HTML, CSS, Tailwind, JavaScript, React
 
+Live application deployed with github pages: https://warcholf.github.io/PasswordGenerator/
 
 # Getting Started with Create React App
 
