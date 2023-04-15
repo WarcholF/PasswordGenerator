@@ -231,7 +231,7 @@ const FormPL = () => {
         <input
           type="text"
           id="first_name"
-          class="w-96 max-md:w-48 py-2.5 px-5 mx-2 mb-2 font-medium bg-gray-500 text-sm rounded-lg  p-2.5 dark:bg-gray-500  dark:text-white "
+          class="w-96 max-md:w-48 py-2.5 px-5 mx-2 mb-2 font-medium bg-gray-500 text-sm rounded-lg  p-2.5 dark:bg-gray-500  text-white "
           value={passwordChange}
         ></input>
         <button
